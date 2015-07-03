@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+    <!--android:background="@drawable/login_bg"-->
+
+    <!-- 头像 -->
+    <ImageButton
+        android:id="@+id/login_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#00000000"
+        android:src="@drawable/ic_launcher"/>
+    <!--android:src="@drawable/login_default_avatar"-->
+
+    <!-- 账号 -->
+    <AutoCompleteTextView
+        android:id="@+id/login_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-4dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp" />
+    <!-- 密码 -->
+    <EditText
+        android:id="@+id/login_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="-4dp"
+        android:inputType="textPassword" />
+    <!--android:hint="@string/login_pwd_hint"-->
+
+    <!-- 登陆按钮 -->
+    <Button
+        android:id="@+id/login_btn_logining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="登录"/>
+    <!--android:background="@drawable/login_button_nor"
+    android:text="@string/btn_login"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_btn_logining"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp" >
+        <!-- 取回密码 -->
+        <Button
+            android:id="@+id/login_btn_getbackpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:background="#00000000"
+            android:textColor="#3A5FCD"
+            android:textSize="15sp"
+            android:text="取回密码"/>
+        <!--android:text="@string/get_pwd"-->
+
+        <!-- 登录设置 -->
+        <Button
+            android:id="@+id/login_btn_setlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="#00000000"
+            android:textColor="#3A5FCD"
+            android:textSize="15sp"
+            android:text="登录设置"/>
+        <!--android:text="@string/set_login"-->
+
+    </RelativeLayout>
+    <!-- 跳转注册界面 -->
+    <Button
+        android:id="@+id/login_btn_to_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="注册"/>
+ <!--   android:background="@drawable/login_btn_register"
+    android:text="@string/btn_register"-->
+</RelativeLayout>

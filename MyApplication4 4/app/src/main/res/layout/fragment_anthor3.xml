@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/s1"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.111"
+        android:id="@+id/s2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="掌上银行"
+            android:id="@+id/textView"
+            android:phoneNumber="false"
+            android:background="#9c9c9c"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.778"
+        android:weightSum="7"
+        android:id="@+id/s3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="分行代理相关介绍"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="6"
+            android:background="#ffffff" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="分行"
+                android:id="@+id/button9"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:textSize="23dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="代理"
+                android:id="@+id/button10"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:textSize="23dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.111"
+        android:id="@+id/s4"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton45"
+            android:layout_weight="0.2"
+            android:background="@drawable/huiyuanyewu0" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton46"
+            android:layout_weight="0.2"
+            android:background="@drawable/zishenyewu0" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton47"
+            android:layout_weight="0.2"
+            android:background="@drawable/chongzhiyewu0" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton48"
+            android:layout_weight="0.2"
+            android:background="@drawable/jingyingweizhi1" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton49"
+            android:layout_weight="0.2"
+            android:background="@drawable/shezhi0" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/verifypwTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请输入手势密码"
+        android:textColor="#000" />
+
+    <FrameLayout
+        android:id="@+id/verify_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="20dp" >
+
+        <Button
+            android:id="@+id/bt_password_manager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="管理手势密码"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/bt_other_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="登陆其他用户"
+            android:textColor="#000" />
+    </LinearLayout>
+
+</RelativeLayout>
